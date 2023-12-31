@@ -1,0 +1,65 @@
+/**
+ * Theme Name:        Blogging Website
+ * Theme URI:         http://localhost/wordpress/
+ * Description:       Custom theme description...
+ * Version:           1.0.0
+ * Author:            Ali Sher Khan
+ * Author URI:        https://example.com
+ * Tags:              block-patterns, full-site-editing
+ * Text Domain:       learning theme
+ * Domain Path:       /assets/lang
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/* custome css  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #fdf4ff;
+    border-bottom: 1px solid #ddd;
+}
+.header_menu {
+    flex-basis: 40%;
+    align-self: stretch;
+    list-style: none;
+    display: flex;
+
+    gap: 2rem;
+}
+.header_menu-item {
+    display: flex;
+    flex: 1;
+}
+.header_menu-link {
+    color: #dc2626;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_menu-link:hover {
+    color: #450a0a;
+}
+
+@media screen {
+    html {
+        margin-top: 0 !important;
+    }
+}
