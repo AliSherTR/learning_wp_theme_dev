@@ -18,6 +18,7 @@
                 foreach ($menu_items as $item) :
             ?>
                 <li class="header_menu-item"><a href="<?php echo esc_url($item->url); ?>" class="header_menu-link"><?php echo esc_html($item->title); ?></a></li>
+                <!-- // check if menu items have children or not if they have children then render those children in our custom markup -->
         <?php endforeach; ?>
     </header>
        
